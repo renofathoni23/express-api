@@ -28,7 +28,7 @@ app.post("/api/data", (req, res) => {
       message: "Data berhasil diterima melalui POST API",
       requestData,
     };
-    res.json(responseData);
+    res.status(200).json(responseData);
   } else {
     res
       .status(401)
